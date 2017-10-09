@@ -678,7 +678,7 @@ module.exports = function (css) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return hello; });
 function hello() {
-  document.write('Hello there');
+  document.write('Hello there. Watch is working :)');
 }
 
 
