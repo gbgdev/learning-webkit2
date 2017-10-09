@@ -1,3 +1,4 @@
 import './css/style.scss';
+import { hello } from './js/module'
 
-document.write('this is a test');
+hello();
