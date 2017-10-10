@@ -47,7 +47,14 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
-      title: 'Multiple bundles'
+      filename: 'index.html',
+      template: 'src/views/index.html',
+      chunks: ['app']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: 'src/views/about.html',
+      chunks: ['about']
     })
   ]
 };
